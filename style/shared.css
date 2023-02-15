@@ -3,7 +3,7 @@
 }
 
 .form__name {
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 .form__main {
@@ -14,13 +14,20 @@
 }
 
 .form__single {
-    width: 490px;
-    padding-bottom: 20px;
+    width: calc(50% - 10px);
+    min-width: 200px;
+    /* flex: 1 0 320px; */
     display: flex;
     flex-direction: column;
 }
 
-.form__label {
+@media (max-width: 740px) {
+    .form__single {
+        width: 100%;
+    }
+}
+
+.from__label {
     font-size: 1.3rem;
     font-weight: 400;
     padding-bottom: 5px;
