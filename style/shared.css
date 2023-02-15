@@ -42,12 +42,3 @@
     border: 1px solid #878e97;
     border-radius: 5px;
 }
-
-.btn {
-    padding: 7px;
-    font-weight: 400;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    color: var(--clr-text-secondary);
-}

@@ -1,0 +1,27 @@
+.form__controls {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-text-secondary);
+}
+
+.btn--delete {
+    background-color: var(--clr-btn-delete);
+}
+
+.btn--reset {
+    background-color: var(--clr-btn-cancel);
+}
+
+.btn--submit {
+    background-color: var(--clr-btn-submit);
+}
