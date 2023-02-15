@@ -1,0 +1,30 @@
+.form__contact {
+    width: 100%;
+}
+
+.form__wrapper {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+@media (max-width: 740px) {
+    .form__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+.form__wrapper .form__single {
+    max-width: 100%;
+    min-width: auto;
+}
+
+.form__wrapper .form__single.form__single--width {
+    max-width: 150px;
+    min-width: auto;
+}
+
+.form__single--width {
+    max-width: 150px;
+    min-width: 130px;
+}
