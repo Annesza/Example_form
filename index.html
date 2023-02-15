@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
-        * {
-            font-family: 'Ubuntu';
-        }
-    </style>
+    <title>Form</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="form.css">
+
 </head>
 
 <body>
@@ -20,70 +17,67 @@
         <header class="header">
             <h3>Twoje dane</h3>
         </header>
-        <section class="form">
-            <form>
-                <section class="form__contact">
-                    <div class="header-form">
-                        <h4>Dane Kontaktowe</h4>
+        <form class="form">
+            <section class="form__contact">
+                <div class="form__header">
+                    <h4 class="form__header-text">Dane Kontaktowe</h4>
+                </div>
+                <div class="form__main">
+                    <div class="form__single">
+                        <span class="input-textover">Imię</span>
+                        <input type="text" class="input" placeholder="Imię">
                     </div>
-                    <div class="form__main">
-                        <div class="Name">
-                            <label for="name" class="input-textover">Imię</label>
-                            <input name="name" type="text" class="input">
-                        </div>
-                        <div class="Surname">
-                            <label for="surname" class="input-textover">Nazwisko</label>
-                            <input name="surname" type="text" class="input">
-                        </div>
-                        <div class="Phone-number">
-                            <label for="phonenumber" class="input-textover">Numer telefonu</label>
-                            <input name="phonenumber" type="tel" class="input">
-                        </div>
-                        <div class="Adres-email">
-                            <label for="email" class="input-textover">Adres email</label>
-                            <input name="email" type="email" class="input">
-                        </div>
+                    <div class="form__single">
+                        <span class="input-textover">Nazwisko</span>
+                        <input type="text" class="input" placeholder="Nazwisko">
                     </div>
-                </section>
-                <section class="form__address">
-                    <div class="form__header">
-                        <h4>Dane adresowe abonenta</h4>
+                    <div class="form__single">
+                        <span class="input-textover">Numer telefonu</span>
+                        <input type="tel" class="input" placeholder="Numer telefonu">
                     </div>
-                    <div class="form__main">
-                        <div class="Street-number">
-                            <label for="streetnumber" class="input-textover">Ulica i numer</label>
-                            <input name="streetnumber" type="text" class="input input--sn">
-                        </div>
-                        <div class="Postcode">
-                            <label for="postcode" class="input-textover">Kod pocztowy</label>
-                            <input name="postcode" type="text" class="input input--pc">
-                        </div>
-                        <div class="City">
-                            <label for="city" class="input-textover">Miasto</label>
-                            <input name="city" type="tel" class="input input--ct">
-                        </div>
-                        <div class="Region">
-                            <label for="region" class="input-textover">Województwo</label>
-                            <input name="region" type="text" class="input input--rg">
-                        </div>
-                        <div class="Country">
-                            <label for="country" class="input-textover">Kraj</label>
-                            <input name="country" type="text" class="input input--cn">
-                        </div>
+                    <div class="form__single">
+                        <span class="input-textover">Adres e-mail</span>
+                        <input type="email" class="input" placeholder="Adres e-mail">
                     </div>
-                </section>
-                <section class="form__buttons">
-                    <div class="button-left">
-                        <input type="button" value="Usuń konto" class="btn btn--delete">
+                </div>
+            </section>
+            <section class="form__address">
+                <div class="form__header">
+                    <h4 class="form__header-text">Dane adresowe abonenta</h4>
+                </div>
+                <div class="form__main">
+                    <div class="form__single">
+                        <span class="input-textover">Ulica i numer</span>
+                        <input type="text" class="input input--sn" placeholder="Ulica i numer">
                     </div>
-                    <div class="button-right">
-                        <input type="reset" value="Anuluj" class="btn btn--reset">
-                        <input type="submit" value="Zapisz zmiany" class="btn btn--submit">
+                    <div class="form__single">
+                        <span class="input-textover">Kod pocztowy</span>
+                        <input type="text" class="input input--pc" placeholder="Kod pocztowy">
                     </div>
-                </section>
-
-            </form>
-        </section>
+                    <div class="form__single">
+                        <span class="input-textover">Miasto</span>
+                        <input type="tel" class="input input--ct" placeholder="Miasto">
+                    </div>
+                    <div class="form__single">
+                        <span class="input-textover">Województwo</span>
+                        <input type="text" class="input input--rg" placeholder="Województwo">
+                    </div>
+                    <div class="form__single">
+                        <span class="input-textover">Kraj</span>
+                        <input type="text" class="input input--cn" placeholder="Kraj">
+                    </div>
+                </div>
+            </section>
+            <section class="form__buttons">
+                <div class="button-left">
+                    <input type="button" value="Usuń konto" class="btn btn--delete">
+                </div>
+                <div class="button-right">
+                    <input type="reset" value="Anuluj" class="btn btn--reset">
+                    <input type="submit" value="Zapisz zmiany" class="btn btn--submit">
+                </div>
+            </section>
+        </form>
     </main>
 </body>
 
