@@ -104,12 +104,21 @@
 }
 
 
-/* .form__controls {
+/* Controls blok */
+
+.controls {
     padding: 10px 0;
+}
+
+.controls__wrapper {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
+
+
+/* te elementy nie psują się przy zmniejszaniu czy zwiększaniu szerokości */
 
 .btn {
     padding: 10px;
@@ -130,4 +139,4 @@
 
 .btn--submit {
     background-color: var(--clr-btn-submit);
-} */
+}
