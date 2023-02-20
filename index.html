@@ -9,79 +9,137 @@
     <link rel="stylesheet" href="style\global.css" />
     <link rel="stylesheet" href="style\shared.css" />
     <link rel="stylesheet" href="style\form.css" />
-    <link rel="stylesheet" href="style\address.css" />
-    <link rel="stylesheet" href="style\controls.css" />
-</head>
+    <link rel="stylesheet" href="style\flexbox.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Main jest naszym głównym wrapperem na stronie, aby wyśrodkowac formularz -->
     <main class="main">
-        <header class="header">
-            <h1 class="header__title">Twoje dane</h1>
+      <!-- Information - czyli nasz cały formularz, zwróć uwagę, ze to jest osobny blok, który ma w sobie tylko header -->
+      <div class="information">
+        <header class="information__header">
+          <h1 class="information__title">Twoje dane</h1>
         </header>
-        <form class="form">
-            <section class="form__contact">
-                <div class="form__header">
-                    <h2 class="form__name">Dane Kontaktowe</h2>
-                </div>
-                <div class="form__main">
-                    <div class="form__single">
-                        <label for="name" class="form__label">Imię</label>
-                        <input name="name" type="text" class="input" placeholder="Imię" />
-                    </div>
-                    <div class="form__single">
-                        <label for="surname" class="form__label">Nazwisko</label>
-                        <input name="surname" type="text" class="input" placeholder="Nazwisko" />
-                    </div>
-                    <div class="form__single">
-                        <label for="phone" class="form__label">Numer telefonu</label>
-                        <input name="phone" type="tel" class="input" placeholder="Numer telefonu" />
-                    </div>
-                    <div class="form__single">
-                        <label for="email" class="form__label">Adres e-mail</label>
-                        <input type="email" class="input" placeholder="Adres e-mail" />
-                    </div>
-                </div>
-            </section>
-            <section class="form__address">
-                <div class="form__header">
-                    <h2 class="form__name">Dane adresowe abonenta</h2>
-                </div>
-                <div class="form__main">
-                    <div class="form__wrapper">
-                        <div class="form__single">
-                            <label for="street" class="form__label">Ulica i numer</label>
-                            <input name="street" type="text" class="input" placeholder="Ulica i numer" />
-                        </div>
-                        <div class="form__single form__single--width">
-                            <label for="postcode" class="form__label">Kod pocztowy</label>
-                            <input name="postcode" type="text" class="input" placeholder="Kod pocztowy" />
-                        </div>
-                        <div class="form__single">
-                            <label for="residence" class="form__label">Miasto</label>
-                            <input name="residence" type="tel" class="input" placeholder="Miasto" />
-                        </div>
-                    </div>
-                    <div class="form__single">
-                        <label for="province" class="form__label">Województwo</label>
-                        <input name="province" type="text" class="input" placeholder="Województwo" />
-                    </div>
-                    <div class="form__single">
-                        <label for="county" class="form__label">Kraj</label>
-                        <input name="county" type="text" class="input" placeholder="Kraj" />
-                    </div>
-                </div>
-            </section>
-            <section class="form__controls">
-                <div class="button-left">
-                    <input type="button" value="Usuń konto" class="btn btn--delete" />
-                </div>
-                <div class="button-right">
-                    <input type="reset" value="Anuluj" class="btn btn--reset" />
-                    <input type="submit" value="Zapisz zmiany" class="btn btn--submit" />
-                </div>
-            </section>
-        </form>
-    </main>
-</body>
 
+        <!-- Nasz pierwszy blok contact -->
+        <section class="contact">
+          <div class="contact__header">
+            <h2 class="contact__title">Dane Kontaktowe</h2>
+          </div>
+          <form class="contact__form">
+            <div class="contact__single">
+              <label for="name" class="contact__label">Imię</label>
+              <input
+                name="name"
+                type="text"
+                class="contact__input"
+                placeholder="Imię"
+              />
+            </div>
+            <div class="contact__single">
+              <label for="surname" class="contact__label">Nazwisko</label>
+              <input
+                name="surname"
+                type="text"
+                class="contact__input"
+                placeholder="Nazwisko"
+              />
+            </div>
+            <div class="contact__single">
+              <label for="tel" class="contact__label">Numer telefonu</label>
+              <input
+                name="tel"
+                type="tel"
+                class="contact__input"
+                placeholder="Numer telefonu"
+              />
+            </div>
+            <div class="contact__single">
+              <label for="email" class="contact__label">Adres e-mail</label>
+              <input
+                name="email"
+                type="email"
+                class="contact__input"
+                placeholder="Adres e-mail"
+              />
+            </div>
+          </form>
+        </section>
+
+        <!-- Nasz drugi blok adress -->
+        <section class="adress">
+          <div class="adress__header">
+            <h4 class="adress__title">Dane adresowe abonenta</h4>
+          </div>
+          <form class="adress__form">
+            <div class="adress__single">
+              <label for="street" class="adress__label">Ulica i numer</label>
+              <input
+                name="street"
+                type="text"
+                class="adress__input"
+                placeholder="Ulica i numer"
+              />
+            </div>
+            <div class="adress__single adress__single--postcode">
+              <label for="postcode" class="adress__label">Kod pocztowy</label>
+              <input
+                mame="postcode"
+                type="text"
+                class="adress__input"
+                placeholder="Kod pocztowy"
+              />
+            </div>
+            <div class="adress__single">
+              <label for="city" class="adress__label">Miasto</label>
+              <input
+                name="city"
+                type="tel"
+                class="adress__input"
+                placeholder="Miasto"
+              />
+            </div>
+            <div class="adress__single">
+              <label for="voivodeship" class="adress__label">Województwo</label>
+              <input
+                name="voivodeship"
+                type="text"
+                class="adress__input"
+                placeholder="Województwo"
+              />
+            </div>
+            <div class="adress__single">
+              <label for="country" class="adress__label">Kraj</label>
+              <input
+                name="country"
+                type="text"
+                class="adress__input"
+                placeholder="Kraj"
+              />
+            </div>
+          </form>
+        </section>
+
+        <section class="form__buttons">
+          <div class="button-left">
+            <input type="button" value="Usuń konto" class="btn btn--delete" />
+          </div>
+          <div class="button-right">
+            <input type="reset" value="Anuluj" class="btn btn--reset" />
+            <input
+              type="submit"
+              value="Zapisz zmiany"
+              class="btn btn--submit"
+            />
+          </div>
+        </section>
+      </div>
+    </main>
+    <section class="flexbox">
+      <div class="flexbox__wrapper">
+        <div class="flexbox__item-1">1</div>
+        <div class="flexbox__item-2">2</div>
+      </div>
+    </section>
+  </body>
 </html>
