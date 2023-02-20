@@ -22,9 +22,11 @@
   font-size: 30px;
   background-color: aqua;
 
-  flex-basis: 200px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  /* flex: 1 1 auto; */
+
+  /* flex-grow: 0; */
+  /* flex-shrink: 1; */
+  /* flex-basis: auto; */
 }
 
 .flexbox__item-2 {
@@ -32,20 +34,9 @@
   line-height: 50px;
   font-size: 30px;
   background-color: bisque;
+  /* flex: 1 1 auto; */
 
-  /* To skrócona wersja 3 ponizej właściwosci */
-  flex: 1 1 0;
-
-  /* To jeszcze bardziej skórcona wersja */
-  flex: 1;
-
-  /* domyślną wartość flex grow: to 0 */
-  flex-grow: 0;
-  /* domyślną wartość flex shrink: to 1 */
-  flex-shrink: 1;
-  /* flex-basis: ; */
-
-  flex-basis: 200px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  /* flex-grow: 0; */
+  /* flex-shrink: 1; */
+  /* flex-basis: auto; */
 }
