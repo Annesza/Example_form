@@ -108,19 +108,14 @@
 
 .controls {
     padding: 10px 0;
-}
-
-.controls__wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
 }
 
 
 /* te elementy nie psują się przy zmniejszaniu czy zwiększaniu szerokości */
 
-.btn {
+.controls__btn {
     padding: 10px;
     font-weight: 400;
     cursor: pointer;
@@ -129,14 +124,16 @@
     color: var(--clr-text-secondary);
 }
 
-.btn--delete {
+.controls__btn--delete {
     background-color: var(--clr-btn-delete);
+    margin-right: auto;
 }
 
-.btn--reset {
+.controls__btn--cancel {
     background-color: var(--clr-btn-cancel);
+    margin-right: 10px;
 }
 
-.btn--submit {
+.controls__btn--save {
     background-color: var(--clr-btn-submit);
 }
